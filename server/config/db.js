@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const db =
-  "mongodb+srv://omotayodavid9:3TrGnL8ZSEHC1XLZ@cluster0.uavfsn9.mongodb.net/?retryWrites=true&w=majority";
+require("dotenv").config();
+const db = process.env.DATABASE_URL;
 mongoose.set("strictQuery", true, "useNewUrlParser", true);
 
 const connectDB = async () => {

@@ -3,6 +3,7 @@ const connectDB = require("./config/db");
 const routes = require("./routes/api/books");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
 const app = express();
 
